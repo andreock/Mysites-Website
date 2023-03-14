@@ -9,14 +9,14 @@
 					ornare urna efficitur ut. Nulla tempor est risus, ut ultrices elit ultrices vitae.
 				</p>
 			</div>
-            <div>
+			<div>
 				<h1>2.</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue risus erat, vulputate
 					ornare urna efficitur ut. Nulla tempor est risus, ut ultrices elit ultrices vitae.
 				</p>
 			</div>
-            <div>
+			<div>
 				<h1>3.</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue risus erat, vulputate
@@ -28,9 +28,11 @@
 </div>
 
 <style>
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 	.container_color {
 		background-color: #0a1a44;
-		height: 30em;
+		height: 32em;
 	}
 
 	h1 {
@@ -38,8 +40,18 @@
 		font-size: 3em;
 	}
 
-    p {
-        color: white;
-        font-size: 1.3em;
-    }
+	p {
+		color: white;
+		font-size: 1.3em;
+	}
+
+	.testimonial {
+		font-family: 'Inter', sans-serif;
+		font-size: 1.5em;
+	}
+
+hr {
+	border-top: 1px dashed rgb(196, 186, 186)te;
+
+}
 </style>

@@ -4,7 +4,6 @@
         <br>
 		<div class="grid grid-cols-3 gap-3 text-center">
 			<div>
-				<!-- <h1>"</h1> -->
                 <h3>Lys Gomis</h3>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue risus erat, vulputate
@@ -33,7 +32,7 @@
 
 <style>
 	.container_color {
-		background: linear-gradient(134deg, rgb(15, 166, 147) 0%, rgb(21, 32, 64) 100%);
+		/* background: linear-gradient(134deg, rgb(15, 166, 147) 0%, rgb(21, 32, 64) 100%); */
 		height: 30em;
 	}
 

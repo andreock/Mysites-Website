@@ -12,7 +12,6 @@
 				porta, odio magna luctus dui, quis iaculis nisi nisi et orci.
 			</p>
 		</div>
-		<!-- ... -->
 		<div><img src="prova.jpg" alt="prova" /></div>
 	</div>
 </div>
@@ -20,7 +19,7 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&display=swap');
 	h1 {
-		color: #1e293b;
+		color: #000000;
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-size: 3em;
 		font-weight: 500;
