@@ -1,0 +1,69 @@
+<script>
+  import CardMC from '../../lib/CardMC.svelte';
+
+	import Cliente from '$lib/Cliente.svelte';
+</script>
+
+<div class="flex justify-center">
+	<div class="grid grid-cols-2">
+		<div>
+			<img
+				src="https://www.codiciprodotto.it/wp-content/uploads/2021/01/minecraft.jpg"
+				alt="main illustration"
+				width="384"
+				class="p-5"
+			/>
+		</div>
+		<div style="text-align: center; ">
+			<h1>Server Minecraft</h1>
+			<p>
+				Hai bisogno di un server minecraft economico per giocare con i tuoi amici? MySites fa per te
+			</p>
+			<p>
+				Offriamo diverse configurazioni in base al numero di giocatori. Scegli quella che fa per te,
+				noi ci occuperemo del resto!
+			</p>
+		</div>
+	</div>
+</div>
+
+<h2>Configuratore</h2>
+
+<center>
+	<div class="grid grid-cols-3 p-5 gap-3">
+		<div>
+			<CardMC type="base" ram={2} cores={2} space={6} players={8} price={3}></CardMC>
+		</div>
+		<div>
+			<CardMC type="medio" ram={4} cores={4} space={15} players={25} price={5}></CardMC>
+		</div>
+		<div>
+			<CardMC type="premium" ram={8} cores={6} space={30} players={90} price={10}></CardMC>
+		</div>
+	</div>
+</center>
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,500&display=swap');
+	h1 {
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 4em;
+		margin-top: 1em;
+	}
+
+	h2 {
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 3em;
+		margin-top: 1em;
+		text-align: center;
+	}
+	img {
+		border-radius: 8px;
+	}
+
+	p {
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 1.3em;
+	}
+</style>

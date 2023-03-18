@@ -3,17 +3,18 @@
 </script>
 
 <div class="flex justify-center">
-	<div class="grid grid-cols-2">
+	<div class="grid grid-cols-2 p-10">
 		<div>
 			<img
-				src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
+				src="https://img.freepik.com/free-vector/space-rocket-flying-space-with-moon-stars-background-print-vector-illustration_1284-2184.jpg?w=2000"
 				alt="main illustration"
+				width="400"
 			/>
 		</div>
 		<div style="text-align: center; ">
-			<h1>Creazione siti web</h1>
+			<h1>Upgrade sito web già esistente</h1>
 			<p>
-				Creiamo siti web responsive, con i più moderni CMS, veloci e adatti a tutte le piattaforme
+				Possiamo aggiornare il tuo vecchio sito web, rifancendo il design e ottimizzando le performance con le migliori tecnologie.
 			</p>
 			<p>I nostri siti sono responsive, scritti per le massime performance</p>
 			<p>La SEO e l'hosting sono inclusi nel prezzo!</p>

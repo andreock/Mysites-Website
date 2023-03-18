@@ -1,8 +1,14 @@
 <script>
 	import Navbar from '../lib/Navbar.svelte';
+    import { page } from '$app/stores';
 </script>
 
 <main>
+
+	{#if $page.route.id != "/"}
+		<Navbar></Navbar>
+	{/if}
+
 	<slot />
 
 	<hr
