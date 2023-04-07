@@ -2,14 +2,24 @@
 	import Typewriter from 'svelte-typewriter';
 	import 'animate.css';
 	import Navbar from './Navbar.svelte';
+	import { is_mobile } from '../lib/js/mobile.ts';
+	import { onMount } from 'svelte';
+	let mobile = true;
+	let grid = "";
+	onMount(() => {
+		mobile = is_mobile();
+		if(!mobile)
+			grid = "custom_grid";
+	});
 </script>
 
 
 <div class="container_color">
 	<Navbar></Navbar>
-
-	<div class="custom_grid">
+	
+		<div class={grid}>
 		<div class="flex justify-end">
+			{#if !mobile}
 			<div class="pt-32" style="width: 70em;">
 				<Typewriter interval={50} cursor={true}>
 					<h1 class="text-white font-medium bold font_bold" style="font-size: 80px">
@@ -25,11 +35,29 @@
 					</a></button
 				>
 			</div>
+			{:else}
+				<div>
+					<h1 class="text-white font-medium bold font_bold text-center" style="font-size: 4em;">
+						<p>mySites,</p>
+						<p>la soluzione che fa per te.</p>
+					</h1>
+					<br />
+					<div class="flex justify-center">
+				<button class="bg-yellow-500 hover:bg-yellow-700 text-dark font-bold py-2 px-4 rounded h-12">
+						<a href="/servizi">
+							Scopri i nostri servizi
+						</a>
+				</button>
+					</div>
+				</div>
+			{/if}
 			<br />
 		</div>
+		{#if !mobile}
 		<div class="flex justify-start animate__animated animate__fadeIn">
 			<img src="phone.png" alt="phone" style="width: 25em; z-index: -2" />
 		</div>
+		{/if}
 	</div>
 </div>
 <br><br>
@@ -48,7 +76,7 @@
 
 	.custom_grid {
 		display: grid;
-		grid-template-columns: auto 30%;
+		grid-template-columns: 70% 30%;
 	}
 
 	.font_bold {

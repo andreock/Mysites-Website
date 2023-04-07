@@ -1,5 +1,22 @@
+<script>
+	import { onMount } from 'svelte';
+	import { is_mobile } from '$lib/js/mobile.ts';
+
+	let grid = "";
+	let mobile = true;
+
+	onMount(() => {
+		mobile = is_mobile();
+		if(!mobile)
+		grid = "pt-20 pl-32";
+	else
+		grid = "pt-3"	
+	})
+
+</script>
+
 <div class="container_color">
-	<div class="pl-20 pt-32">
+	<div class={grid}>
 		<h1>Noi lavoriamo così:</h1>
 		<div class="grid grid-cols-3 gap-3">
 			<div>
@@ -37,12 +54,12 @@
 
 	h1 {
 		color: white;
-		font-size: 3em;
+		font-size: 2em;
 	}
 
 	p {
 		color: white;
-		font-size: 1.3em;
+		font-size: 1.2em;
 	}
 
 	.testimonial {

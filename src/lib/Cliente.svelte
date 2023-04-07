@@ -6,6 +6,7 @@
 	<div class="grid grid-cols-2">
 		<div class="flex justify-center">
 			<img
+		 		class="object-contain"
 				src={img}
 				alt={titolo}
 			/>
@@ -26,6 +27,7 @@
 		</div>
 		<div class="flex justify-center">
 			<img
+		 		class="object-contain"
 				src={img}
 				alt="lys gomis"
 			/>
@@ -54,6 +56,7 @@
 
 	img {
 		border-radius: 8px;
+
 	}
 
 	.testo {

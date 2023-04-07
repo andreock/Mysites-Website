@@ -1,15 +1,29 @@
 <script>
 	import Cliente from '$lib/Cliente.svelte';
+	import { is_mobile } from '$lib/js/mobile.ts';
+	import { onMount } from 'svelte';
+	let mobile = false;
+	let grid = "";
+	onMount(() => {
+		mobile = is_mobile();
+		if(!mobile)
+			grid = "grid grid-cols-2"
+	})
+	
 </script>
 
 <div class="flex justify-center">
-	<div class="grid grid-cols-2">
+	<div class={grid}>
+		
+		{#if !mobile}	
 		<div>
 			<img
 				src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
 				alt="main illustration"
 			/>
 		</div>
+		{/if}
+
 		<div style="text-align: center; ">
 			<h1>Creazione siti web</h1>
 			<p>
@@ -19,6 +33,15 @@
 			<p>La SEO e l'hosting sono inclusi nel prezzo!</p>
 			<p>Per maggiori informazioni contattaci in privato</p>
 		</div>
+		{#if mobile}
+			<br>
+			<div>
+			<img
+				src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
+				alt="main illustration"
+			/>
+		</div>
+		{/if}
 	</div>
 </div>
 

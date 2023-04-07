@@ -1,5 +1,17 @@
+<script>
+	import { onMount } from 'svelte';
+	import { is_mobile } from '$lib/js/mobile.ts';
+	let mobile = true;
+	let grid = "";
+	onMount(() => {
+		mobile = is_mobile();
+		if(!mobile)
+			grid = "grid grid-cols-2";
+	});	
+</script>
 <div class="flex justify-center">
-	<div class="grid grid-cols-2">
+	<div class={grid}>
+		{#if !mobile}
 		<div>
 			<img
 				src="https://static.vecteezy.com/system/resources/previews/002/136/381/original/mobile-application-development-free-vector.jpg"
@@ -7,6 +19,7 @@
 				width="450"
 			/>
 		</div>
+		{/if}
 		<div style="text-align: center; ">
 			<h1>Creazione app mobili</h1>
 			<p>

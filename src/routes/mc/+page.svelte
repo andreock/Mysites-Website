@@ -2,10 +2,20 @@
   import CardMC from '../../lib/CardMC.svelte';
 
 	import Cliente from '$lib/Cliente.svelte';
+       import { is_mobile } from '$lib/js/mobile.ts';
+	import { onMount } from 'svelte';
+	let mobile = false;
+	let grid = "";
+	onMount(() => {
+		mobile = is_mobile();
+		if(!mobile)
+			grid = "grid grid-cols-2"
+	})
 </script>
 
 <div class="flex justify-center">
-	<div class="grid grid-cols-2">
+	<div class={grid}>
+		{#if !mobile}
 		<div>
 			<img
 				src="https://www.codiciprodotto.it/wp-content/uploads/2021/01/minecraft.jpg"
@@ -14,6 +24,7 @@
 				class="p-5"
 			/>
 		</div>
+		{/if}
 		<div style="text-align: center; ">
 			<h1>Server Minecraft</h1>
 			<p>

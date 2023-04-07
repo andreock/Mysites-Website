@@ -1,9 +1,19 @@
 <script>
 	import Cliente from '$lib/Cliente.svelte';
+	import { is_mobile } from '$lib/js/mobile.ts';
+	import { onMount } from 'svelte';
+	let mobile = false;
+	let grid = "";
+	onMount(() => {
+		mobile = is_mobile();
+		if(!mobile)
+			grid = "grid grid-cols-2"
+	})
 </script>
 
 <div class="flex justify-center">
-	<div class="grid grid-cols-2 p-10">
+	<div class={grid}>
+		{#if !mobile}
 		<div>
 			<img
 				src="https://img.freepik.com/free-vector/space-rocket-flying-space-with-moon-stars-background-print-vector-illustration_1284-2184.jpg?w=2000"
@@ -11,6 +21,7 @@
 				width="400"
 			/>
 		</div>
+		{/if}
 		<div style="text-align: center; ">
 			<h1>Upgrade sito web già esistente</h1>
 			<p>
