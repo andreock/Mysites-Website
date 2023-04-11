@@ -6,10 +6,13 @@
 	import { onMount } from 'svelte';
 	let mobile = false;
 	let grid = "";
+	let space = "";
 	onMount(() => {
 		mobile = is_mobile();
-		if(!mobile)
+		if(!mobile){
+			space = "p-5 gap-3";
 			grid = "grid grid-cols-2"
+		}
 	})
 </script>
 
@@ -41,7 +44,7 @@
 <h2>Configuratore</h2>
 
 <center>
-	<div class="grid grid-cols-3 p-5 gap-3">
+	<div class="grid grid-cols-3 {space}">
 		<div>
 			<CardMC type="base" ram={2} cores={2} space={6} players={8} price={3}></CardMC>
 		</div>

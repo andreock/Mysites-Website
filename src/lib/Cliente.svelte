@@ -1,9 +1,17 @@
 <script lang="ts">
+	import { onMount } from "svelte";
+	import { is_mobile } from "./js/mobile";
+
 	export let right: boolean, testo: string, titolo: string, link: string, img: string;
+	let grid = "grid grid-cols-2";
+	onMount(() => {
+		if(is_mobile())
+			grid = "";
+	})	
 </script>
 
-{#if right}
-	<div class="grid grid-cols-2">
+{#if right && grid != ""}
+	<div class="{grid}">
 		<div class="flex justify-center">
 			<img
 		 		class="object-contain"
@@ -19,7 +27,7 @@
 		</div>
 	</div>
 {:else}
-	<div class="grid grid-cols-2">
+	<div class="{grid}">
 		<div class="testo">
 			<h2>{titolo}</h2>
 			{@html testo}
