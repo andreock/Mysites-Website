@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import { scroll_to_id } from "./js/scroll";
 </script>
 
 <!-- navbar -->
@@ -13,6 +14,7 @@
 			class="hidden md:flex px-4 mx-8 space-x-12 text-xl font_spesciale "
 		>
 			<li><a class="hover:text-gray-200" href="/">Home</a></li>
+			<li><a class="hover:text-gray-200"  on:click={() => scroll_to_id("servizi")} href="#0">Servizi</a></li>
 		</ul>
 	</div>
 </nav>

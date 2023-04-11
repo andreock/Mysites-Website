@@ -4,6 +4,7 @@
 	import Navbar from './Navbar.svelte';
 	import { is_mobile } from '../lib/js/mobile.ts';
 	import { onMount } from 'svelte';
+	import { scroll_to_id } from './js/scroll';
 	let mobile = true;
 	let grid = "";
 	onMount(() => {
@@ -30,7 +31,7 @@
 
 				<br />
 				<button class="bg-yellow-500 hover:bg-yellow-700 text-dark font-bold py-2 px-4 rounded h-12"
-					><a href="/servizi">
+					><a on:click={() => scroll_to_id("servizi")} href="#0">
 						Scopri i nostri servizi
 					</a></button
 				>
