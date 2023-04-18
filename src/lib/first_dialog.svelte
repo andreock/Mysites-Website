@@ -18,7 +18,7 @@
 <div class="container mx-auto">
 	<div class={grid}>
 		<div class="pr-10">
-			<h1>Di che cosa ci occupiamo?</h1>
+			<h1>Chi siamo</h1>
 			{#if mobile}
 				<br>
 			{/if}

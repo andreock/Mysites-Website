@@ -79,6 +79,12 @@
 		grid-template-columns: 70% 30%;
 	}
 
+	/*Responsive text padding*/
+	@media screen and (max-width: 1600px) {
+		.custom_grid {
+			padding: 3em;
+		}
+	}
 	.font_bold {
 		font-family: 'Inter', sans-serif;
 	}

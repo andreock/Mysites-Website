@@ -1,28 +1,43 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import { is_mobile } from "./js/mobile";
+	export let color: string;
+	import { onMount } from 'svelte';
+	import { is_mobile } from './js/mobile';
+	import 'animate.css';
 
-    export let titolo: string, descrizione: string, image: string, link: string;
-    let fixed_height = "";
+	export let titolo: string, descrizione: string, image: string, link: string;
+	let fixed_height = '';
 
-    onMount(() => {
-      if(is_mobile())
-        fixed_height = "fixed_height";
-    })
-
-
+	onMount(() => {
+		if (is_mobile()) fixed_height = 'fixed_height';
+	});
 </script>
- 
-<a href={link} class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-xl hover:bg-gray-100 {fixed_height}">
-  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={image} alt="">
-  <div class="flex flex-col justify-between p-4 leading-normal">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{titolo}</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{descrizione}</p>
-  </div>
-</a>
+
+<div class="card" style="background-color: {color}">
+	<h4 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{titolo}</h4>
+	<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{descrizione}</p>
+	<a href={link}>Scopri di più <span class="animate__animated animate__fadeIn">&#8594;</span></a>
+	<div class="flex justify-center">
+		<img src={image} alt="" class="rounded-lg;"/>
+	</div>
+</div>
 
 <style>
-  .fixed_height {
-    height: 40em;
-  }
+	.card {
+		position: relative;
+		border-radius: 30px;
+		background-color: rgb(255, 255, 255);
+		width: 20em;
+		height: 35em;
+		padding: 3em;
+		box-shadow: 2px 2px 5px #2b52ff75;
+	}
+
+	.card > div > img {
+		position: absolute;
+		bottom: 0;
+		width: 22em;
+		margin-bottom: 1em;
+		padding: 2em;
+	}
+	
 </style>

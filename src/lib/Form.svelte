@@ -48,10 +48,10 @@
 
 <style>
     label {
-        color: white;
+        color: black;
     }
 
     h2 {
-        color: white;
+        color: black;
     }
 </style>
