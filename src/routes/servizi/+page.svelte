@@ -1,13 +1,13 @@
 <script>
-
-	import Servizio from "$lib/Servizio.svelte";
-
+	import Servizio from '$lib/Servizio.svelte';
 </script>
+
 <center>
 	<h1 class="title" id="servizi">I nostri servizi</h1>
 	<br />
-
-	<div class="grid xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 gap-4">
+	<br />
+	<br />
+	<div class="grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-2 gap-4">
 		<div>
 			<Servizio
 				titolo="Creazione siti web"
@@ -53,15 +53,16 @@
 				color="rgba(16, 99, 251, 0.4)"
 			/>
 		</div>
-	
+
 		<div>
 			<Servizio
 				titolo="Server Minecraft"
-				descrizione="Hai bisogno di un server Minecraft? Offriamo server MC controllabili via interfaccia web e anti-DDoS."				image="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP"
+				descrizione="Hai bisogno di un server Minecraft? Offriamo server MC controllabili via interfaccia web e anti-DDoS."
+				image="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP"
 				link="/mc"
 			/>
 		</div>
-	
+
 		<div>
 			<Servizio
 				titolo="Creazione bot Telegram e Discord"
@@ -76,10 +77,12 @@
 </center>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');	.title {
-            font-family: 'Inter', sans-serif;
-            font-size: 3em;
-            font-weight: 800;
-        }
-    </style>
-    
+	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,500&display=swap');
+	.title {
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 3em;
+		font-weight: 800;
+		text-align: left;
+		padding-left: 1.2em;
+	}
+</style>
