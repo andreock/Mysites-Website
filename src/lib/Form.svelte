@@ -1,4 +1,4 @@
-<div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+<div class="py-16 px-4">
 	<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
 		Contattaci
 	</h2>
