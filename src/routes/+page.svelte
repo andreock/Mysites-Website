@@ -17,7 +17,7 @@
 
 <LavoriamoCosi />
 
-<div class="grid grid-cols-2">
+<div class="grid grid-cols-2 gap-4">
 	<Form />
 	<!-- <div class=""> -->
 		<div class="py-16">

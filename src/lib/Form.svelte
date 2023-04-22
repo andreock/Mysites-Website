@@ -1,40 +1,40 @@
-<div class="py-16 px-4">
+<div class="py-16 px-4 ml-5 text-center">
 	<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
 		Contattaci
 	</h2>
 	<form action="#" class="space-y-8">
-		<div>
+		<div class="flex flex-col justify-center items-center">
 			<label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
 				>La tua email</label
 			>
 			<input
 				type="email"
 				id="email"
-				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+				class="fixed_width shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
 				placeholder="name@gmail.com"
 				required
 			/>
 		</div>
-		<div>
+		<div class="flex flex-col justify-center items-center">
 			<label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
 				>Oggetto</label
 			>
 			<input
 				type="text"
 				id="subject"
-				class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+				class="block p-3 fixed_width text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
 				placeholder="Oggetto della richiesta"
 				required
 			/>
 		</div>
-		<div class="sm:col-span-2">
+		<div class="flex flex-col justify-center items-center">
 			<label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
 				>Il tuo messaggio</label
 			>
 			<textarea
 				id="message"
 				rows="6"
-				class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+				class="block p-2.5 fixed_width text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
 				placeholder="Salve, vorrei una ..."
 			/>
 		</div>
@@ -54,4 +54,8 @@
     h2 {
         color: black;
     }
+	
+	.fixed_width {
+		width: 40em;
+	}
 </style>
