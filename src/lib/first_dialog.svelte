@@ -1,25 +1,5 @@
-<script>
-	// export let mobile;
-	import { onMount } from 'svelte';
-	import { is_mobile } from '$lib/js/mobile.ts';
-
-	let grid = '';
-	let padding = '';
-	let mobile = true;
-
-	onMount(() => {
-		mobile = is_mobile();
-		if (!mobile) {
-			grid = 'custom-grid';
-			padding = 'pl-20';
-		}else {
-			padding = 'p-5';
-		}
-	});
-</script>
-
-<div class={grid}>
-	<div class={padding}>
+<div class="custom_grid">
+	<div class="padding_phone xl:pl-20">
 		<h1>Chi siamo</h1>
 		<br />
 
@@ -33,13 +13,11 @@
 			stories e post e molto altro ancora.
 		</p>
 	</div>
-	{#if !mobile}
-		<div>
-			<div class="pl-20">
-				<img src="/people.png" alt="prova" />
-			</div>
+	<div>
+		<div class="pl-20">
+			<img src="/people.png" alt="prova" />
 		</div>
-	{/if}
+	</div>
 </div>
 
 <style>
@@ -56,5 +34,18 @@
 		font-weight: 400;
 		font-size: large;
 		font-size: 1.5em;
+	}
+	@media (max-width: 500px) {
+		img {
+			display: none;
+		}
+
+		.padding_phone {
+			padding-left: 1em;
+		}
+
+		.custom_grid {
+			display: block;
+		}
 	}
 </style>
