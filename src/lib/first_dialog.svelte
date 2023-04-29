@@ -4,38 +4,43 @@
 	import { is_mobile } from '$lib/js/mobile.ts';
 
 	let grid = '';
+	let padding = '';
 	let mobile = true;
 
 	onMount(() => {
 		mobile = is_mobile();
-		if (!mobile) grid = 'grid grid-cols-2';
-		else grid = 'grid grid-rows-2';
+		if (!mobile) {
+			grid = 'custom-grid';
+			padding = 'pl-20';
+		}else {
+			padding = 'p-5';
+		}
 	});
 </script>
 
-<!-- <div class="container pl-20"> -->
-	<div class="custom_grid">
-		<div class="pl-20">
-			<h1>Chi siamo</h1>
-				<br />
+<div class={grid}>
+	<div class={padding}>
+		<h1>Chi siamo</h1>
+		<br />
 
-			<p>
-				mySites è una piccola startup italiana composta da tre ragazzi con una cosa che li accomuna,
-				la passione per il mondo IT. mySites cerca a tutti i costi di offrire servizi di qualità a
-				prezzi moderati, il nostro operato, pertanto, è basato sulla comunicazione con il cliente,
-				così da poter soddisfare a pieno ogni richiesta. La nostra aspirazione è di crescere tramite
-				l’esperienza e di far crescere i nostri clienti nei loro più disparati business tramite i
-				nostri numerosi servizi, tra i quali; sviluppo siti web, creazione app mobile, creazione
-				stories e post e molto altro ancora.
-			</p>
-		</div>
+		<p>
+			mySites è una piccola startup italiana composta da tre ragazzi con una cosa che li accomuna,
+			la passione per il mondo IT. mySites cerca a tutti i costi di offrire servizi di qualità a
+			prezzi moderati, il nostro operato, pertanto, è basato sulla comunicazione con il cliente,
+			così da poter soddisfare a pieno ogni richiesta. La nostra aspirazione è di crescere tramite
+			l’esperienza e di far crescere i nostri clienti nei loro più disparati business tramite i
+			nostri numerosi servizi, tra i quali; sviluppo siti web, creazione app mobile, creazione
+			stories e post e molto altro ancora.
+		</p>
+	</div>
+	{#if !mobile}
 		<div>
 			<div class="pl-20">
-				<img src="/people.png" alt="prova"/>
+				<img src="/people.png" alt="prova" />
 			</div>
 		</div>
-	</div>
-<!-- </div> -->
+	{/if}
+</div>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&display=swap');
