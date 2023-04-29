@@ -1,0 +1,9 @@
+.mysites_color {
+    background-color: #10a591aa;
+}
+
+
+.custom_grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}

@@ -1,6 +1,7 @@
 <script>
 	import Navbar from '../lib/Navbar.svelte';
     import { page } from '$app/stores';
+	import './app.css';
 </script>
 
 <main>
@@ -34,4 +35,5 @@
 	main {
 		background-color: rgb(219, 213, 213);
 	}
+	
 </style>
