@@ -12,7 +12,7 @@
 		if (!mobile) {
 			grid = 'custom-grid';
 			padding = 'pl-20';
-		}else {
+		} else {
 			padding = 'p-5';
 		}
 	});
@@ -33,13 +33,11 @@
 			stories e post e molto altro ancora.
 		</p>
 	</div>
-	{#if !mobile}
-		<div>
-			<div class="pl-20">
-				<img src="/people.png" alt="prova" />
-			</div>
+	<div class="md:hidden">
+		<div class="pl-20">
+			<img src="/people.png" alt="prova" />
 		</div>
-	{/if}
+	</div>
 </div>
 
 <style>
@@ -56,5 +54,10 @@
 		font-weight: 400;
 		font-size: large;
 		font-size: 1.5em;
+	}
+	@media (min-width: 400px) { 
+		img {
+			display: none;
+		}
 	}
 </style>
