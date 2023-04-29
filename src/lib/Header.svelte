@@ -9,7 +9,7 @@
 
 	<div class="custom_grid">
 		<div class="flex justify-end">
-			<div class="" style="width: 70em;">
+			<div class="padding" style="width: 70em;">
 				<Typewriter interval={50} cursor={true}>
 					<h1 class="text-white font-medium bold font_bold">
 						<p>mySites,</p>
@@ -38,22 +38,35 @@
 		height: 48em;
 	}
 
-	/*Responsive text padding*/
-	@media screen and (max-width: 1600px) {
-		.custom_grid {
-			padding: 3em;
-			display: block;
-		}
+	.padding {
+		padding-top: 8rem;
+		padding-left: 5rem;
+	}
+	h1 {
+		font-size: 5em;
+	}
+
+	@media (max-width: 800px) {
 		img {
 			display: none;
+		}
+		h1 {
+			font-size: 3em;
+		}
+		.custom_grid {
+			display: block;
 		}
 		.container_color {
 			background: linear-gradient(134deg, rgb(15, 166, 147) 0%, rgb(21, 32, 64) 100%);
 			height: 33em;
 		}
+		.padding {
+			padding-top: 2rem;
+			padding-left: 1rem;
+		}
 	}
+
 	.font_bold {
 		font-family: 'Inter', sans-serif;
-		font-size: 3em;
 	}
 </style>
