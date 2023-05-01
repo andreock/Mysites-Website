@@ -19,7 +19,7 @@
 	<footer class="text-center lg:text-left">
 		<div class="p-4 text-center">
 			© 2023 Copyright:
-			<a href="/">MySites</a>
+			<a href="/">mySites</a>
 		</div>
 	</footer>
 </main>

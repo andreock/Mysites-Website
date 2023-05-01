@@ -79,5 +79,9 @@
 				</div>
 			</div>
 		</div>
+	
 	</div>
+		<div class="flex justify-center">
+			<img src="/contatti.png"/>
+		</div>
 </div>

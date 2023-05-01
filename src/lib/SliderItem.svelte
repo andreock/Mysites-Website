@@ -26,4 +26,9 @@
 	p {
 		font-size: 1.5em;
 	}
+	@media (max-width: 700px) {
+		img {
+			width: 100px;
+		}
+	}
 </style>

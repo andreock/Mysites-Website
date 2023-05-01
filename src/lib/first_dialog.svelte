@@ -32,8 +32,7 @@
 	p {
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-weight: 400;
-		font-size: large;
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
 	@media (max-width: 500px) {
 		img {
