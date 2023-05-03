@@ -7,9 +7,9 @@
 	export let mobile: boolean;
 </script>
 
-<div class="py-16">
+<div class="py-16 border_image">
 	<div class="flex flex-wrap">
-		<div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+		<div class="mb-12 mt-28 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex items-start">
 				{#if !mobile}
 					<Phone />
@@ -26,7 +26,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="mb-12 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+
+		<div class="mb-12 mt-28 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex items-start">
 				{#if !mobile}
 					<Email />
@@ -43,7 +44,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="mb-12 md:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+
+		<div class="mb-12 md:mb-0 mt-28 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex align-start">
 				{#if !mobile}
 					<Github />
@@ -62,7 +64,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+
+		<div class="grow-0 mt-28 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex align-start">
 				{#if !mobile}
 					<Instagram />
@@ -79,9 +82,15 @@
 				</div>
 			</div>
 		</div>
-	
 	</div>
-		<div class="flex justify-center">
-			<img src="/contatti.png"/>
-		</div>
 </div>
+
+<style>
+
+	@media (min-width: 768px) {
+		.border_image {
+		border-image-source: url(contatti_sfondo.png);
+		border-image-slice: 0 fill;
+		}
+	}
+</style>
