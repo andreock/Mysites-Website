@@ -22,8 +22,9 @@
 			/>
 		</div>
 		{/if}
-		<div style="text-align: center; ">
+		<div class="mr-5" style="text-align: center; ">
 			<h1>Creazione post</h1>
+			<br />
 			<p>
 				Possiamo aiutarti a gestire il tuo account social con creazione di post, reel, storie...
 			</p>
