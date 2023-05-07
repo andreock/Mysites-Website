@@ -5,11 +5,18 @@
 	import Phone from './icon/Phone.svelte';
 
 	export let mobile: boolean;
+
+	let space = "mb-12 mt-28";
+	let space2 = "mt-28";
+	if(mobile) {
+		space = "m-2";
+		space2 = "m-2";
+	}
 </script>
 
 <div class="py-16 border_image">
 	<div class="flex flex-wrap">
-		<div class="mb-12 mt-28 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+		<div class="{space} grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex items-start">
 				{#if !mobile}
 					<Phone />
@@ -27,7 +34,7 @@
 			</div>
 		</div>
 
-		<div class="mb-12 mt-28 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+		<div class="{space} grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex items-start">
 				{#if !mobile}
 					<Email />
@@ -45,7 +52,7 @@
 			</div>
 		</div>
 
-		<div class="mb-12 md:mb-0 mt-28 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+		<div class="{space} md:mb-0 grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex align-start">
 				{#if !mobile}
 					<Github />
@@ -65,7 +72,7 @@
 			</div>
 		</div>
 
-		<div class="grow-0 mt-28 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
+		<div class="grow-0 {space2} shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex align-start">
 				{#if !mobile}
 					<Instagram />
