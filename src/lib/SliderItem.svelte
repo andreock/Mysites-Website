@@ -19,16 +19,20 @@
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 2.8em;
 		font-weight: 500;
 	}
 
 	p {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 	@media (max-width: 700px) {
 		img {
 			width: 100px;
 		}
+	}
+
+	img {
+		width: 150px;
 	}
 </style>
