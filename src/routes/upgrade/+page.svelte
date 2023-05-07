@@ -34,27 +34,6 @@
 	</div>
 </div>
 
-<h1 style="text-align:center;">I nostri clienti</h1>
-
-<div class=" grid grid-cols-1">
-	<Cliente
-		right={true}
-		titolo="Lys Gomis"
-		testo="
-	Lys Gomis, ex giocatore di Serie A, si è affidato a noi per creare il sito web della sua
-				scuola calcio. <br>
-				Il sito è scritto con Sveltekit, un framework moderno e molto veloce
-	"
-		link="https://scuolaportierilysgomis.it/"
-		img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnOVFzmBHxjy76NHuCkuQHfcyK_R_083Mdl43n6q5R1yvKBithA-JCeWwBQWXsQxIWys&usqp=CAU"
-	/>
-	<Cliente right={false} titolo="EduConSco Srl" testo="
-	Filippo Gomez Paloma, professore all'università di Macerata, si è rivolto a noi per la sua startup nel mondo del ECS.
-	<br> 
-	Il sito è completo di CMS, Forum e biblioteca per inserire file che solo gli iscritti possono visualizzare.
-	" link="https://educonsco.it" img="/logo_ecs.png"/>
-</div>
-
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,500&display=swap');
 	h1 {
