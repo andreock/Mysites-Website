@@ -41,7 +41,7 @@
 	</div>
 </div>
 
-<h2>Configuratore</h2>
+<h2>Scegli il piano che fa al caso tuo.</h2>
 
 <center>
 	<div class="grid grid-cols-3 {space}">
