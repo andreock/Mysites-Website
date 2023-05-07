@@ -20,8 +20,9 @@
 			/>
 		</div>
 		{/if}
-		<div style="text-align: center; ">
+		<div class="mr-5" style="text-align: center; ">
 			<h1>Creazione app mobili</h1>
+			<br />
 			<p>
 				Creiamo app mobili, con i più moderni framework come Nativescript, Ionic o per chi vuole le massime performance Kotlin e Flutter
 			</p>
