@@ -3,29 +3,29 @@
 	import { is_mobile } from '$lib/js/mobile.ts';
 	import { onMount } from 'svelte';
 	let mobile = false;
-	let grid = "";
+	let grid = '';
 	onMount(() => {
 		mobile = is_mobile();
-		if(!mobile)
-			grid = "grid grid-cols-2"
-	})
+		if (!mobile) grid = 'grid grid-cols-2';
+	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
 		{#if !mobile}
-		<div>
-			<img
-				src="https://img.freepik.com/free-vector/space-rocket-flying-space-with-moon-stars-background-print-vector-illustration_1284-2184.jpg?w=2000"
-				alt="main illustration"
-				width="400"
-			/>
-		</div>
+			<div>
+				<img
+					src="https://img.freepik.com/free-vector/space-rocket-flying-space-with-moon-stars-background-print-vector-illustration_1284-2184.jpg?w=2000"
+					alt="main illustration"
+					width="400"
+				/>
+			</div>
 		{/if}
 		<div style="text-align: center; ">
 			<h1>Upgrade sito web già esistente</h1>
 			<p>
-				Possiamo aggiornare il tuo vecchio sito web, rifancendo il design e ottimizzando le performance con le migliori tecnologie.
+				Possiamo aggiornare il tuo vecchio sito web, rifancendo il design e ottimizzando le
+				performance con le migliori tecnologie.
 			</p>
 			<p>I nostri siti sono responsive, scritti per le massime performance</p>
 			<p>La SEO e l'hosting sono inclusi nel prezzo!</p>

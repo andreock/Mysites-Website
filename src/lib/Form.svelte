@@ -47,14 +47,14 @@
 </div>
 
 <style>
-    label {
-        color: black;
-    }
+	label {
+		color: black;
+	}
 
-    h2 {
-        color: black;
-    }
-	
+	h2 {
+		color: black;
+	}
+
 	.fixed_width {
 		width: 90%;
 	}

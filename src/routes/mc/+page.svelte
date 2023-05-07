@@ -1,32 +1,32 @@
 <script>
-  import CardMC from '../../lib/CardMC.svelte';
+	import CardMC from '../../lib/CardMC.svelte';
 
 	import Cliente from '$lib/Cliente.svelte';
-       import { is_mobile } from '$lib/js/mobile.ts';
+	import { is_mobile } from '$lib/js/mobile.ts';
 	import { onMount } from 'svelte';
 	let mobile = false;
-	let grid = "";
-	let space = "";
+	let grid = '';
+	let space = '';
 	onMount(() => {
 		mobile = is_mobile();
-		if(!mobile){
-			space = "p-5 gap-3";
-			grid = "grid grid-cols-2"
+		if (!mobile) {
+			space = 'p-5 gap-3';
+			grid = 'grid grid-cols-2';
 		}
-	})
+	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
 		{#if !mobile}
-		<div>
-			<img
-				src="https://www.codiciprodotto.it/wp-content/uploads/2021/01/minecraft.jpg"
-				alt="main illustration"
-				width="384"
-				class="p-5"
-			/>
-		</div>
+			<div>
+				<img
+					src="https://www.codiciprodotto.it/wp-content/uploads/2021/01/minecraft.jpg"
+					alt="main illustration"
+					width="384"
+					class="p-5"
+				/>
+			</div>
 		{/if}
 		<div style="text-align: center; ">
 			<h1>Server Minecraft</h1>
@@ -46,17 +46,16 @@
 <center>
 	<div class="grid grid-cols-3 {space}">
 		<div>
-			<CardMC type="base" ram={2} cores={2} space={6} players={8} price={3}></CardMC>
+			<CardMC type="base" ram={2} cores={2} space={6} players={8} price={3} />
 		</div>
 		<div>
-			<CardMC type="medio" ram={4} cores={4} space={15} players={25} price={5}></CardMC>
+			<CardMC type="medio" ram={4} cores={4} space={15} players={25} price={5} />
 		</div>
 		<div>
-			<CardMC type="premium" ram={8} cores={6} space={30} players={90} price={10}></CardMC>
+			<CardMC type="premium" ram={8} cores={6} space={30} players={90} price={10} />
 		</div>
 	</div>
 </center>
-
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,500&display=swap');

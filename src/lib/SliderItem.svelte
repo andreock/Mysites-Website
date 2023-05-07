@@ -1,9 +1,9 @@
 <script lang="ts">
-    export let step_name: string, text:string, img: string;
+	export let step_name: string, text: string, img: string;
 </script>
 
 <div class="flex justify-center">
-	<img src={img} alt={step_name + "img"}/>
+	<img src={img} alt={step_name + 'img'} />
 	<div class="pl-5">
 		<h1>{step_name}</h1>
 		<p>{text}</p>

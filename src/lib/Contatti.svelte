@@ -86,11 +86,10 @@
 </div>
 
 <style>
-
 	@media (min-width: 768px) {
 		.border_image {
-		border-image-source: url(/contatti_sfondo.png);
-		border-image-slice: 0 fill;
+			border-image-source: url(/contatti_sfondo.png);
+			border-image-slice: 0 fill;
 		}
 	}
 </style>

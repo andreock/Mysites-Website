@@ -1,13 +1,12 @@
 <script>
 	import Navbar from '../lib/Navbar.svelte';
-    import { page } from '$app/stores';
+	import { page } from '$app/stores';
 	import './app.css';
 </script>
 
 <main>
-
-	{#if $page.route.id != "/"}
-		<Navbar></Navbar>
+	{#if $page.route.id != '/'}
+		<Navbar />
 	{/if}
 
 	<slot />
@@ -35,5 +34,4 @@
 	main {
 		background-color: rgb(219, 213, 213);
 	}
-	
 </style>

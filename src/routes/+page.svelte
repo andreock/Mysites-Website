@@ -28,12 +28,12 @@
 {#if !mobile}
 	<div class="grid grid-cols-2 gap-4">
 		<Form />
-		<Contatti mobile={false}/>
+		<Contatti mobile={false} />
 	</div>
 {:else}
 	<div class="flex justify-center content-center text-center">
 		<FormMobile />
-		<Contatti mobile={true}/>
+		<Contatti mobile={true} />
 	</div>
 {/if}
 <!-- </div> -->

@@ -3,25 +3,22 @@
 	import { is_mobile } from '$lib/js/mobile.ts';
 	import { onMount } from 'svelte';
 	let mobile = false;
-	let grid = "";
+	let grid = '';
 	onMount(() => {
 		mobile = is_mobile();
-		if(!mobile)
-			grid = "grid grid-cols-2"
-	})
-	
+		if (!mobile) grid = 'grid grid-cols-2';
+	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
-		
-		{#if !mobile}	
-		<div>
-			<img
-				src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
-				alt="main illustration"
-			/>
-		</div>
+		{#if !mobile}
+			<div>
+				<img
+					src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
+					alt="main illustration"
+				/>
+			</div>
 		{/if}
 
 		<div style="text-align: center; ">
@@ -34,13 +31,13 @@
 			<p>Per maggiori informazioni contattaci in privato</p>
 		</div>
 		{#if mobile}
-			<br>
+			<br />
 			<div>
-			<img
-				src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
-				alt="main illustration"
-			/>
-		</div>
+				<img
+					src="https://media.istockphoto.com/id/1265041897/vector/business-team-working-together-on-web-page-design-people-building-website-interface-on.jpg?s=612x612&w=0&k=20&c=0nwzJe_VQNlN94Own93LE5pqnYG5g8E1ez7M4u0NWvk="
+					alt="main illustration"
+				/>
+			</div>
 		{/if}
 	</div>
 </div>
@@ -59,11 +56,17 @@
 		link="https://scuolaportierilysgomis.it/"
 		img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnOVFzmBHxjy76NHuCkuQHfcyK_R_083Mdl43n6q5R1yvKBithA-JCeWwBQWXsQxIWys&usqp=CAU"
 	/>
-	<Cliente right={false} titolo="EduConSco Srl" testo="
+	<Cliente
+		right={false}
+		titolo="EduConSco Srl"
+		testo="
 	Filippo Gomez Paloma, professore all'università di Macerata, si è rivolto a noi per la sua startup nel mondo del ECS.
 	<br> 
 	Il sito è completo di CMS, Forum e biblioteca per inserire file che solo gli iscritti possono visualizzare.
-	" link="https://educonsco.it" img="/logo_ecs.png"/>
+	"
+		link="https://educonsco.it"
+		img="/logo_ecs.png"
+	/>
 </div>
 
 <style>

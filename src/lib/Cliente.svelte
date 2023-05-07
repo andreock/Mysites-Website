@@ -1,23 +1,18 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import { is_mobile } from "./js/mobile";
+	import { onMount } from 'svelte';
+	import { is_mobile } from './js/mobile';
 
 	export let right: boolean, testo: string, titolo: string, link: string, img: string;
-	let grid = "grid grid-cols-2";
+	let grid = 'grid grid-cols-2';
 	onMount(() => {
-		if(is_mobile())
-			grid = "";
-	})	
+		if (is_mobile()) grid = '';
+	});
 </script>
 
-{#if right && grid != ""}
-	<div class="{grid}">
+{#if right && grid != ''}
+	<div class={grid}>
 		<div class="flex justify-center">
-			<img
-		 		class="object-contain"
-				src={img}
-				alt={titolo}
-			/>
+			<img class="object-contain" src={img} alt={titolo} />
 		</div>
 
 		<div class="testo">
@@ -27,18 +22,14 @@
 		</div>
 	</div>
 {:else}
-	<div class="{grid}">
+	<div class={grid}>
 		<div class="testo">
 			<h2>{titolo}</h2>
 			{@html testo}
 			<p>Il sito è visitabile <a href={link} rel="noreferrer" target="_blank">qui</a></p>
 		</div>
 		<div class="flex justify-center">
-			<img
-		 		class="object-contain"
-				src={img}
-				alt="lys gomis"
-			/>
+			<img class="object-contain" src={img} alt="lys gomis" />
 		</div>
 	</div>
 {/if}
@@ -64,7 +55,6 @@
 
 	img {
 		border-radius: 8px;
-
 	}
 
 	.testo {
