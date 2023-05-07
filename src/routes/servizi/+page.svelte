@@ -8,7 +8,7 @@
 <br />
 <!--TODO: Remove this center -->
 <center>
-	<div class="grid xl:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 gap-4">
+	<div class="grid 2xl:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 gap-4">
 		<div>
 			<Servizio
 				titolo="Creazione siti web"
