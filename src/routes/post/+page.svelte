@@ -4,23 +4,25 @@
 	import { onMount } from 'svelte';
 	let mobile = false;
 	let grid = '';
+	let img_center = "";
 	onMount(() => {
 		mobile = is_mobile();
-		if (!mobile) grid = 'grid grid-cols-2';
+		if (!mobile) {
+			grid = 'grid grid-cols-2'
+		}else {
+			img_center = "flex justify-center";
+		};
 	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
-		{#if !mobile}
-			<div>
-				<img
-					src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/eb7147103984155.5f58fb3d5bbeb.jpg"
-					alt="main illustration"
-					width="400"
-				/>
-			</div>
-		{/if}
+		<div class={img_center}>
+			<img
+				src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/eb7147103984155.5f58fb3d5bbeb.jpg"
+				alt="main illustration"
+			/>
+		</div>
 		<div class="mr-5" style="text-align: center; ">
 			<h1>Creazione post</h1>
 			<br />
