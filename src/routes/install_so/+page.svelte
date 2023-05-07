@@ -22,8 +22,9 @@
 			/>
 		</div>
 		{/if}
-		<div style="text-align: center; ">
+		<div class="mr-5" style="text-align: center; ">
 			<h1>Preparazione PC</h1>
+			<br />
 			<p>
 				Hai bisogno di aggiornare i PC nella tua Azienda o di preparare nuovi PC?
 			</p>
