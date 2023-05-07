@@ -1,5 +1,16 @@
+<script>
+	import { is_mobile } from "$lib/js/mobile";
+	import { onMount } from "svelte";
+	let grid = "";
+
+	onMount(() => {
+		if(!is_mobile()){
+			grid = "grid grid-cols-2"
+		}
+	})
+</script>
 <div class="flex justify-center">
-	<div class="grid grid-cols-2">
+	<div class={grid}>
 		<div>
 			<img
 				class="h-auto max-w-full"

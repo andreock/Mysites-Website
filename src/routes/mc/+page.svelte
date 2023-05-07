@@ -11,7 +11,10 @@
 		mobile = is_mobile();
 		if (!mobile) {
 			space = 'p-5 gap-3';
-			grid = 'grid grid-cols-2';
+			grid = 'grid grid-cols-3';
+		}else {
+			grid = 'grid grid-cols-1';
+			space = "gap-3 p-2";
 		}
 	});
 </script>
@@ -44,7 +47,7 @@
 <h2>Scegli il piano che fa al caso tuo.</h2>
 
 <center>
-	<div class="grid grid-cols-3 {space}">
+	<div class="{grid} {space}">
 		<div>
 			<CardMC type="base" ram={2} cores={2} space={6} players={8} price={3} />
 		</div>

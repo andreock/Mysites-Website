@@ -3,23 +3,25 @@
 	import { is_mobile } from '$lib/js/mobile.ts';
 	let mobile = true;
 	let grid = '';
+	let img_center = "";
 	onMount(() => {
 		mobile = is_mobile();
-		if (!mobile) grid = 'grid grid-cols-2';
+		if (!mobile) {
+			grid = 'grid grid-cols-2';
+		}else {
+			img_center = "flex justify-center";
+		}
 	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
-		{#if !mobile}
-			<div>
-				<img
-					src="https://static.vecteezy.com/system/resources/previews/002/136/381/original/mobile-application-development-free-vector.jpg"
-					alt="main illustration"
-					width="450"
-				/>
-			</div>
-		{/if}
+		<div class={img_center}>
+			<img
+				src="https://static.vecteezy.com/system/resources/previews/002/136/381/original/mobile-application-development-free-vector.jpg"
+				alt="main illustration"
+			/>
+		</div>
 		<div class="mr-5" style="text-align: center; ">
 			<h1>Creazione app mobili</h1>
 			<br />
@@ -45,6 +47,11 @@
 		border-radius: 8px;
 	}
 
+	@media (max-width: 900px) {
+		img {
+			width: 300px;
+		}
+	} 
 	p {
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-size: 1.3em;
