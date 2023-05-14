@@ -59,9 +59,13 @@
 
 	.testo {
 		padding: 3em;
-		color: white;
 	}
 
+	@media (min-width: 700px) {
+		.testo {
+			color: white;
+		}
+	}
 	.border {
 		border-radius: 24px;
 		margin: 2em;
