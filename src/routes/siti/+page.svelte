@@ -55,7 +55,9 @@
 	"
 		link="https://scuolaportierilysgomis.it/"
 		img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrnOVFzmBHxjy76NHuCkuQHfcyK_R_083Mdl43n6q5R1yvKBithA-JCeWwBQWXsQxIWys&usqp=CAU"
+		img_width="30%"
 	/>
+	<br />
 	<Cliente
 		right={false}
 		titolo="EduConSco Srl"
@@ -66,6 +68,7 @@
 	"
 		link="https://educonsco.it"
 		img="/logo_ecs.png"
+		img_width="45%"
 	/>
 </div>
 

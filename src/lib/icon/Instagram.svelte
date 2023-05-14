@@ -10,7 +10,7 @@
 </script>
 
 <div class="shrink-0">
-	<div class="p-4 mysites_color rounded-md shadow-md {size} flex items-center justify-center">
+	<div class="p-4 mysites_bg_color rounded-md shadow-md {size} flex items-center justify-center">
 		<img src="/instagram.png" alt="instagram logo" />
 	</div>
 </div>
