@@ -146,33 +146,12 @@
 			>
 		</li>
 	</ul>
-	<button
+	<a href="/#form">
+		<button
 		type="button"
 		class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
-		>Choose plan</button
+		>Scegli il piano e contattaci</button
 	>
+	</a>
+
 </div>
-
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,500&display=swap');
-	h1 {
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		font-size: 4em;
-		margin-top: 1em;
-	}
-
-	h2 {
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		font-size: 3em;
-		margin-top: 1em;
-		text-align: center;
-	}
-	img {
-		border-radius: 8px;
-	}
-
-	p {
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		font-size: 1.3em;
-	}
-</style>

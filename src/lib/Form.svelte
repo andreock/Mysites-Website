@@ -1,4 +1,4 @@
-<div class="py-16 px-4 ml-5 text-center mysites_color rounded-lg m-10 shadow-md shadow-blue-300">
+<div class="py-16 px-4 ml-5 text-center mysites_color rounded-lg m-10 shadow-md shadow-blue-300" id="form">
 	<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
 		Contattaci
 	</h2>
