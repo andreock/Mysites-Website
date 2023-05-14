@@ -2,26 +2,31 @@
 	import Navbar from '../lib/Navbar.svelte';
 	import { page } from '$app/stores';
 	import './app.css';
+	import SvelteSeo from 'svelte-seo';
 </script>
 
-<div class="app">
-
-<main>
-	{#if $page.route.id != '/'}
-	<Navbar />
-{/if}
-
-	<slot />
-
-	<br />
-</main>
-<hr
-style="  border-top: 1px solid black;
-"
+<SvelteSeo
+	title="Mysites"
+	description="MySites è una startup che opera nel settore dell'informatica."
+	canonical="https://mysites.it/"
+	keywords="creazione sito web, sito web, seo, valutazione seo, svelte, creazione app mobile, java, kotlin"
 />
-<footer class="text-center lg:text-left">
 
+<div class="app">
+	<main>
+		{#if $page.route.id != '/'}
+			<Navbar />
+		{/if}
 
+		<slot />
+
+		<br />
+	</main>
+	<hr
+		style="  border-top: 1px solid black;
+"
+	/>
+	<footer class="text-center lg:text-left">
 		<div class="p-4 text-center">
 			© 2023 Copyright:
 			<a href="/">mySites</a>
@@ -63,5 +68,4 @@ style="  border-top: 1px solid black;
 		padding: 12px;
 		background-color: rgb(219, 213, 213);
 	}
-
 </style>
