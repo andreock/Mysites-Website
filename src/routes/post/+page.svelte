@@ -19,7 +19,7 @@
 	<div class={grid}>
 		<div class={img_center}>
 			<img
-				src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/eb7147103984155.5f58fb3d5bbeb.jpg"
+				src="/pages/post.png"
 				alt="main illustration"
 			/>
 		</div>

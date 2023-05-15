@@ -15,7 +15,7 @@
 		{#if !mobile}
 			<div>
 				<img
-					src="https://img.freepik.com/premium-vector/system-software-update-illustration-design-concept-illustration-websites-landing-pages-mobile-applications-posters-banners_108061-821.jpg?w=2000"
+					src="/pages/os.png"
 					alt="main illustration"
 					width="450"
 				/>

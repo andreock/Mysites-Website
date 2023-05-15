@@ -18,7 +18,7 @@
 	<div class={grid}>
 		<div class={img_center}>
 			<img
-				src="https://static.vecteezy.com/system/resources/previews/002/136/381/original/mobile-application-development-free-vector.jpg"
+				src="/pages/app.png"
 				alt="main illustration"
 			/>
 		</div>

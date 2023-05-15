@@ -14,7 +14,7 @@
 		<div>
 			<img
 				class="h-auto max-w-full"
-				src="https://cdn.sites.convertsocial.net/convertsocial.net/2022/08/how-to-make-money-on-telegram-with-convertsocial.png"
+				src="/pages/bot.png"
 				alt="main illustration"
 			/>
 		</div>

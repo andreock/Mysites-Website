@@ -24,7 +24,7 @@
 		{#if !mobile}
 			<div>
 				<img
-					src="https://www.codiciprodotto.it/wp-content/uploads/2021/01/minecraft.jpg"
+					src="/pages/minecraft.png"
 					alt="main illustration"
 					width="384"
 					class="p-5"

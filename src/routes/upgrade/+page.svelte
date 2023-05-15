@@ -15,7 +15,7 @@
 		{#if !mobile}
 			<div>
 				<img
-					src="https://img.freepik.com/free-vector/space-rocket-flying-space-with-moon-stars-background-print-vector-illustration_1284-2184.jpg?w=2000"
+					src="/pages/upgrade.png"
 					alt="main illustration"
 					width="400"
 				/>
