@@ -7,21 +7,32 @@
 	let mobile = false;
 	let grid = '';
 	let space = '';
+	let text_grid = '';
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) {
 			space = 'p-5 gap-3';
 			grid = 'grid grid-cols-3';
+			text_grid = 'grid grid-cols-2';
 		} else {
-			grid = 'grid grid-cols-1';
+			grid = 'grid grid-rows-1';
 			space = 'gap-3 p-2';
+			text_grid = 'grid grid-rows-1';
 		}
 	});
 </script>
 
 <div class="flex justify-center">
-	<div class={grid}>
-		<div style="text-align: center; ">
+	<div class={text_grid}>
+		<!-- TODO: Remove this deprecated tag -->
+		{#if mobile}
+			<center>
+				<img src="/pages/minecraft.png" alt="main illustration" width="250" class="mt-5" />
+			</center>
+		{:else}
+			<img src="/pages/minecraft.png" alt="main illustration" width="250" class="pl-12" />
+		{/if}
+		<div style="text-align: center; " class="pr-12">
 			<h1>Server Minecraft</h1>
 			<p>
 				Hai bisogno di un server minecraft economico per giocare con i tuoi amici? MySites fa per te
@@ -32,10 +43,6 @@
 			</p>
 		</div>
 		<br />
-		<!-- TODO: Remove this deprecated tag -->
-		<center>
-			<img src="/pages/minecraft.png" alt="main illustration" width="250" />
-		</center>
 	</div>
 </div>
 
@@ -60,7 +67,6 @@
 	h1 {
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-size: 4em;
-		margin-top: 1em;
 	}
 
 	h2 {

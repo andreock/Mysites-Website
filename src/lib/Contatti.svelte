@@ -14,7 +14,7 @@
 	}
 </script>
 
-<div class="py-16 border_image">
+<div class="border_image">
 	<div class="flex flex-wrap">
 		<div class="{space} grow-0 shrink-0 basis-auto w-full md:w-6/12 px-3 lg:px-6">
 			<div class="flex items-start">

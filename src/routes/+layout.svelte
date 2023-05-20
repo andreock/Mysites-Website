@@ -20,7 +20,6 @@
 
 		<slot />
 
-		<br />
 	</main>
 	<hr
 		style="  border-top: 1px solid black;
@@ -65,7 +64,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
 		background-color: rgb(219, 213, 213);
 	}
 </style>

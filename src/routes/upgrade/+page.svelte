@@ -7,11 +7,15 @@
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) grid = 'grid grid-cols-2';
+		else grid = 'grid grid-rows-1';
 	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
+		<div>
+			<img src="/pages/upgrade.png" alt="main illustration" width="400" />
+		</div>
 		<div style="text-align: center; ">
 			<h1>Upgrade sito web già esistente</h1>
 			<p>
@@ -23,9 +27,6 @@
 			<p>Per maggiori informazioni contattaci in privato</p>
 		</div>
 		<br />
-		<div>
-			<img src="/pages/upgrade.png" alt="main illustration" width="400" />
-		</div>
 	</div>
 </div>
 

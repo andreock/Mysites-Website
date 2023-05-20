@@ -6,22 +6,19 @@
 	let grid = '';
 	onMount(() => {
 		mobile = is_mobile();
-		if (!mobile) grid = 'grid grid-cols-2';
+		if (!mobile) {
+			grid = 'grid grid-cols-2';
+		}
 	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
-		{#if !mobile}
-			<div>
-				<img
-					src="/pages/website.png"
-					alt="main illustration"
-				/>
-			</div>
-		{/if}
+		<div class="">
+			<img src="/pages/website.png" alt="main illustration" />
+		</div>
 
-		<div style="text-align: center; ">
+		<div style="text-align: center;">
 			<h1>Creazione siti web</h1>
 			<p>
 				Creiamo siti web responsive, con i più moderni CMS, veloci e adatti a tutte le piattaforme
@@ -30,15 +27,7 @@
 			<p>La SEO e l'hosting sono inclusi nel prezzo!</p>
 			<p>Per maggiori informazioni contattaci in privato</p>
 		</div>
-		{#if mobile}
-			<br />
-			<div>
-				<img
-					src="/pages/website.png"
-					alt="main illustration"
-				/>
-			</div>
-		{/if}
+		<br />
 	</div>
 </div>
 
@@ -77,7 +66,6 @@
 	h1 {
 		font-family: 'Plus Jakarta Sans', sans-serif;
 		font-size: 4em;
-		margin-top: 1em;
 	}
 
 	img {

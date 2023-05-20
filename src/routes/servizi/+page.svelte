@@ -66,7 +66,7 @@
 
 		<div>
 			<Servizio
-				titolo="Creazione bot Telegram e Discord"
+				titolo="Creazione bot"
 				descrizione="Hai bisogno di un bot per Discord o Telegram? Mysites fa per te! 
 					Creaiamo bot Telegram e Discord per tutte le tue esigenze."
 				image="/tg.png"
