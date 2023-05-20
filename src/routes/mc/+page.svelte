@@ -12,25 +12,15 @@
 		if (!mobile) {
 			space = 'p-5 gap-3';
 			grid = 'grid grid-cols-3';
-		}else {
+		} else {
 			grid = 'grid grid-cols-1';
-			space = "gap-3 p-2";
+			space = 'gap-3 p-2';
 		}
 	});
 </script>
 
 <div class="flex justify-center">
 	<div class={grid}>
-		{#if !mobile}
-			<div>
-				<img
-					src="/pages/minecraft.png"
-					alt="main illustration"
-					width="384"
-					class="p-5"
-				/>
-			</div>
-		{/if}
 		<div style="text-align: center; ">
 			<h1>Server Minecraft</h1>
 			<p>
@@ -41,6 +31,11 @@
 				noi ci occuperemo del resto!
 			</p>
 		</div>
+		<br />
+		<!-- TODO: Remove this deprecated tag -->
+		<center>
+			<img src="/pages/minecraft.png" alt="main illustration" width="250" />
+		</center>
 	</div>
 </div>
 

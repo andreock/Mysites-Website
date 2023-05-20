@@ -12,15 +12,6 @@
 
 <div class="flex justify-center">
 	<div class={grid}>
-		{#if !mobile}
-			<div>
-				<img
-					src="/pages/upgrade.png"
-					alt="main illustration"
-					width="400"
-				/>
-			</div>
-		{/if}
 		<div style="text-align: center; ">
 			<h1>Upgrade sito web già esistente</h1>
 			<p>
@@ -30,6 +21,10 @@
 			<p>I nostri siti sono responsive, scritti per le massime performance</p>
 			<p>La SEO e l'hosting sono inclusi nel prezzo!</p>
 			<p>Per maggiori informazioni contattaci in privato</p>
+		</div>
+		<br />
+		<div>
+			<img src="/pages/upgrade.png" alt="main illustration" width="400" />
 		</div>
 	</div>
 </div>

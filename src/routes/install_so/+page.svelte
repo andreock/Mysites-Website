@@ -12,15 +12,6 @@
 
 <div class="flex justify-center">
 	<div class={grid}>
-		{#if !mobile}
-			<div>
-				<img
-					src="/pages/os.png"
-					alt="main illustration"
-					width="450"
-				/>
-			</div>
-		{/if}
 		<div class="mr-5" style="text-align: center; ">
 			<h1>Preparazione PC</h1>
 			<br />
@@ -30,6 +21,14 @@
 				o aggiornare quelli già esistenti
 			</p>
 			<p>Per maggiori informazioni contattaci in privato</p>
+		</div>
+		<br />
+		<div>
+			<img
+				src="/pages/os.png"
+				alt="main illustration"
+				width="450"
+			/>
 		</div>
 	</div>
 </div>
