@@ -13,7 +13,7 @@
 		if (!mobile) {
 			space = 'p-5 gap-3';
 			grid = 'grid grid-cols-3';
-			text_grid = 'grid grid-cols-2';
+			text_grid = 'grid grid-cols-4';
 		} else {
 			grid = 'grid grid-rows-1';
 			space = 'gap-3 p-2';
@@ -32,8 +32,9 @@
 		{:else}
 			<img src="/pages/minecraft.png" alt="main illustration" width="250" class="pl-12" />
 		{/if}
-		<div style="text-align: center; " class="pr-12">
+		<div style="text-align: center; " class="pr-12 col-span-3">
 			<h1>Server Minecraft</h1>
+			<br />
 			<p>
 				Hai bisogno di un server minecraft economico per giocare con i tuoi amici? MySites fa per te
 			</p>

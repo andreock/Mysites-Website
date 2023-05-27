@@ -6,7 +6,7 @@
 	let grid = '';
 	onMount(() => {
 		mobile = is_mobile();
-		if (!mobile) grid = 'grid grid-cols-2';
+		if (!mobile) grid = 'grid grid-cols-4';
 		else grid = 'grid grid-rows-1';
 	});
 </script>
@@ -16,8 +16,9 @@
 		<div>
 			<img src="/pages/upgrade.png" alt="main illustration" width="400" />
 		</div>
-		<div style="text-align: center; ">
+		<div style="text-align: center; " class="col-span-3">
 			<h1>Upgrade sito web già esistente</h1>
+			<br />
 			<p>
 				Possiamo aggiornare il tuo vecchio sito web, rifancendo il design e ottimizzando le
 				performance con le migliori tecnologie.

@@ -7,7 +7,7 @@
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) {
-			grid = 'grid grid-cols-2';
+			grid = 'grid grid-cols-4';
 		}
 	});
 </script>
@@ -18,8 +18,9 @@
 			<img src="/pages/website.png" alt="main illustration" />
 		</div>
 
-		<div style="text-align: center;">
+		<div style="text-align: center;" class="col-span-3">
 			<h1>Creazione siti web</h1>
+			<br />
 			<p>
 				Creiamo siti web responsive, con i più moderni CMS, veloci e adatti a tutte le piattaforme
 			</p>

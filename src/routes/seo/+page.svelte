@@ -7,26 +7,30 @@
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) {
-			grid = 'grid grid-cols-2';
+			grid = 'grid grid-cols-4';
 		}
 	});
 </script>
 
-<div class="flex justify-center">
+<div class="flex justify-center mt-5">
 	<div class={grid}>
-		<div class="">
+		<div>
 			<img src="/pages/seo.png" alt="main illustration" />
 		</div>
 
-		<div style="text-align: center;">
-			<h1>Valutazione SEO</h1>
-			<p>
-				Vuoi migliorare il posizionamento sui motori di ricerca?
-			</p>
-			<p>Possiamo analizzare il tuo sito, mostrarti e correggere gli errori della SEO</p>
-			<p>mySites non ti fornirà solo un punteggio, bensì pro e contro del tuo sito, infine, dove e come migliorarli</p>
-			<p>Per maggiori informazioni contattaci in privato</p>
-		</div>
+        <!-- <div style="margin-left: 10em;">  -->
+            <div style="text-align: center;" class="mt-5 col-span-3">
+                <h1>Valutazione SEO</h1>
+                <br />
+                <p>
+                    Vuoi migliorare il posizionamento sui motori di ricerca?
+                </p>
+                <p>Possiamo analizzare il tuo sito, mostrarti e correggere gli errori della SEO</p>
+                <p>mySites non ti fornirà solo un punteggio, bensì pro e contro del tuo sito, infine, dove e come migliorarli</p>
+                <p>Per maggiori informazioni contattaci in privato</p>
+            </div>
+        <!-- </div> -->
+
 		<br />
 	</div>
 </div>

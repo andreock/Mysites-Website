@@ -5,7 +5,7 @@
 
 	onMount(() => {
 		if(!is_mobile()){
-			grid = "grid grid-cols-2"
+			grid = "grid grid-cols-4"
 		}
 	})
 </script>
@@ -18,7 +18,7 @@
 				alt="main illustration"
 			/>
 		</div>
-		<div class="mr-5" style="text-align: center; ">
+		<div class="mr-5 col-span-3" style="text-align: center; ">
 			<h1>Creazione bot Discord o Telegram</h1>
 			<br />
 			<p>

@@ -6,7 +6,7 @@
 	let grid = '';
 	onMount(() => {
 		mobile = is_mobile();
-		if (!mobile) grid = 'grid grid-cols-2';
+		if (!mobile) grid = 'grid grid-cols-4';
 	});
 </script>
 
@@ -19,7 +19,7 @@
 				width="450"
 			/>
 		</div>
-		<div style="text-align: center; ">
+		<div style="text-align: center; " class="col-span-3">
 			<h1>Preparazione PC</h1>
 			<br />
 			<p>Hai bisogno di aggiornare i PC nella tua Azienda o di preparare nuovi PC?</p>

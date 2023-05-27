@@ -8,7 +8,7 @@
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) {
-			grid = 'grid grid-cols-2'
+			grid = 'grid grid-cols-4'
 		}else {
 			img_center = "flex justify-center";
 		};
@@ -23,7 +23,7 @@
 				alt="main illustration"
 			/>
 		</div>
-		<div class="mr-5" style="text-align: center; ">
+		<div class="mr-5 col-span-3" style="text-align: center; ">
 			<h1>Creazione post</h1>
 			<br />
 			<p>
