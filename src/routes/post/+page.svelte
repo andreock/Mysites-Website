@@ -8,7 +8,7 @@
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) {
-			grid = 'grid grid-cols-4'
+			grid = 'grid grid-cols-6'
 		}else {
 			img_center = "flex justify-center";
 		};
@@ -17,7 +17,7 @@
 
 <div class="flex justify-center">
 	<div class={grid}>
-		<div class={img_center}>
+		<div class={img_center + "col-span-3"}>
 			<img
 				src="/pages/post.png"
 				alt="main illustration"
@@ -46,6 +46,7 @@
 
 	img {
 		border-radius: 8px;
+		width: 600px;
 	}
 
 	p {

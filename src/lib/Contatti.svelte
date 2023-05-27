@@ -29,7 +29,8 @@
 					{:else}
 						<p class="font-bold mb-1">Telefono</p>
 					{/if}
-					<p class="text-gray-500">+1 234-567-89</p>
+					<p class="text-gray-500">
+						<a href="telto:+393473561995">+39 347 356 1995</a></p>
 				</div>
 			</div>
 		</div>
