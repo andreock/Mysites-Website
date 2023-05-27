@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"animate.css": "^4.1.1",
-		"flowbite": "^1.6.5"
+		"flowbite": "^1.6.5",
+		"vite-plugin-svelte-sitemap": "^1.0.3"
 	}
 }
