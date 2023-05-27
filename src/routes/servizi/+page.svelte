@@ -74,6 +74,15 @@
 				color="rgba(16, 99, 251, 0.4)"
 			/>
 		</div>
+		<div>
+			<Servizio
+				titolo="Valutazione SEO"
+				descrizione="Vuoi migliorare il posizionamento del tuo sito su Google? MySites fa al caso tuo."
+				image="/seo.png"
+				link="/seo"
+				color="rgba(16, 99, 251, 0.4)"
+			/>
+		</div>
 	</div>
 </center>
 
