@@ -1,9 +1,12 @@
 <script lang="ts">
+	import { onMount } from "svelte";
+	import { is_mobile } from "./js/mobile";
+
 	export let step_name: string, text: string, img: string;
 </script>
 
 <div class="flex justify-center">
-	<img src={img} alt={step_name + 'img'} />
+	<img src={img} alt={step_name + "img"}/>
 	<div class="pl-16 mt-7">
 		<h1>{step_name}</h1>
 		<p>{text}</p>
@@ -34,5 +37,11 @@
 
 	img {
 		width: 150px;
+	}
+
+	@media (max-width: 600px) {
+		img {
+			display: none;
+		}
 	}
 </style>
