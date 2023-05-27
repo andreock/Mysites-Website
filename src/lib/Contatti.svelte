@@ -48,7 +48,7 @@
 					{:else}
 						<p class="font-bold mb-1">Email</p>
 					{/if}
-					<p class="text-gray-500"><a href="mailto:faf.sites@gmail.com">faf.sites@gmail.com</a></p>
+					<p class="text-gray-500"><a href="mailto:contact@mysites-service.com">contact@mysites-service.com</a></p>
 				</div>
 			</div>
 		</div>
