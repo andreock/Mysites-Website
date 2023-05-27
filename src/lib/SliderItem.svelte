@@ -4,7 +4,7 @@
 
 <div class="flex justify-center">
 	<img src={img} alt={step_name + 'img'} />
-	<div class="pl-5">
+	<div class="pl-16 mt-7">
 		<h1>{step_name}</h1>
 		<p>{text}</p>
 	</div>
