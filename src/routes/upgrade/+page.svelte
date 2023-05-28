@@ -7,7 +7,7 @@
 	onMount(() => {
 		mobile = is_mobile();
 		if (!mobile) grid = 'grid grid-cols-4';
-		else grid = 'grid grid-rows-1';
+		else grid = 'grid grid-cols-1';
 	});
 </script>
 

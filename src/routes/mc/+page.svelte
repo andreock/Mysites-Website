@@ -17,7 +17,7 @@
 		} else {
 			grid = 'grid grid-rows-1';
 			space = 'gap-3 p-2';
-			text_grid = 'grid grid-rows-1';
+			text_grid = 'grid grid-cols-1';
 		}
 	});
 </script>
@@ -26,13 +26,13 @@
 	<div class={text_grid}>
 		<!-- TODO: Remove this deprecated tag -->
 		{#if mobile}
-			<center>
-				<img src="/pages/minecraft.png" alt="main illustration" width="250" class="mt-5" />
-			</center>
+			<div class="flex justify-center">
+				<img src="/pages/minecraft.png" alt="main illustration" width="150" class="mt-5" />
+			</div>
 		{:else}
 			<img src="/pages/minecraft.png" alt="main illustration" width="250" class="pl-12" />
 		{/if}
-		<div style="text-align: center; " class="pr-12 col-span-3">
+		<div style="text-align: center; " class="col-span-3">
 			<h1>Server Minecraft</h1>
 			<br />
 			<p>
