@@ -9,8 +9,8 @@
 	let space = "mb-12 mt-28";
 	let space2 = "mt-28";
 	if(mobile) {
-		space = "m-2";
-		space2 = "m-2";
+		space = "mt-8";
+		space2 = "mt-8";
 	}
 </script>
 
