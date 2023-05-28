@@ -26,8 +26,8 @@
 	.card {
 		position: relative;
 		border-radius: 30px;
-		background-color: rgb(255, 255, 255);
-		width: 30em;
+		background-color: red;
+		width: 26em;
 		height: 22em;
 		padding: 3em;
 		box-shadow: 2px 2px 5px #2b52ff75;
@@ -37,15 +37,16 @@
 		background-position: right top;
 		transition: all 0.5s ease-out;
 	}
+
 	.card:hover {
 		background-position: left top;
 	}
 
 	@media (max-width: 600px) {
 		.card {
-			width: 26em;
-			height: 22em;
-			padding: 3em;
+			width: 100vw;
+			height: 21em;
+			padding: 2em;
 		}
 	}
 </style>
