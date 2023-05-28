@@ -1,7 +1,4 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-	import { is_mobile } from "./js/mobile";
-
 	export let step_name: string, text: string, img: string;
 </script>
 

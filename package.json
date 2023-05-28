@@ -36,8 +36,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@emailjs/browser": "^3.11.0",
 		"animate.css": "^4.1.1",
 		"flowbite": "^1.6.5",
+		"svelte-dialogs": "^1.2.2",
 		"vite-plugin-svelte-sitemap": "^1.0.3"
 	}
 }
